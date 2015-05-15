@@ -23,8 +23,12 @@ def assign_rooms(names)
 end
 
 def printer(input)
-  
-  input.each do |single|
-    puts input
+  $index = 1
+  input.each do |a|
+    puts badge_maker(a)
   end
+  assign_rooms(input).each do |a|
+    puts a
+  end
+  nil
 end
